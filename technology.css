@@ -1,0 +1,159 @@
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    background-color: rgb(5, 16, 26);
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: -10px;
+}
+
+nav a{
+    margin-top: 30px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 120px;
+    margin-left: 200px;
+ 
+}
+
+.left{
+    margin-left: -50px;
+    margin-top: 40px;
+}
+
+.right{
+
+    margin-left: 100px;
+}
+
+
+.left .p2class{
+    margin-top: 100px;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: -70px;
+    margin-top: 100px;
+}
+
+.burger{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background-image: url(background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+    }
+
+    nav{
+        display: none;
+      }
+      .burger{
+        display: block;
+        z-index: 2;
+      }
+      header{
+        justify-content: space-between;
+        z-index: 0;
+      }
+      .active{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 200px;
+        height: 450px;
+        position: absolute;
+        right: 0;
+        top:0;
+        gap:10px;
+        padding-top:50px;
+        padding-left:20px;
+        z-index: 1;
+      }
+
+      .active a {
+        color: black !important;
+        font-size: 20px;
+      }
+
+      .burger-active{
+        content: url('icon-close.svg');
+      }
+
+      hr{
+        display: none;
+      }
+      
+      .container{
+        flex-direction: column-reverse;
+      }
+
+      .p1class{
+        margin-left: 40px;
+      }
+
+      .p3class{
+        font-size: 15px;
+        margin-left: -20px;
+      }
+
+      .p2class{
+        font-size: 50px;
+        margin-left: 90px;
+      }
+
+      .p4class{
+        margin-left: -60px;
+        text-align: center;
+      }
+
+      .left{
+        margin-left: -150px;
+      }
+
+      .right{
+        margin-left: -180px;
+        margin-top: -50px;
+      }
+
+      .right img{
+        content: url(image-launch-vehicle-portrait.jpg);
+        margin-left: -50px;
+      }
+
+      .left img{
+        margin-left: -20px;
+      }
+
+      .secondtext{
+        display: none;
+      }
+
+      .firsttext{
+        margin-left: 100px;
+      }
+  
+      .numbers{
+        flex-direction: row;
+        margin-top: -50px;
+        margin-left: -140px;
+      }
+}
